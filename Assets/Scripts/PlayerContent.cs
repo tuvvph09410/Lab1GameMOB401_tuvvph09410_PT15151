@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerContent : MonoBehaviour
 {
     // Start is called before the first frame update
-    private float speed = 0.5f; // tốc độ
+    private float speed = 5f; // tốc độ
     private CharacterController controller; // đều phối
     private float verticalVelocity = 0.0f; // Vận Tốc Ngang
     private float gravity = 11.0f; // trọng lượng
