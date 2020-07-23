@@ -71,6 +71,7 @@
     <Compile Include="Assets\AllStarCharacterLibray\Scripts\SkinnedMeshCombiner.cs" />
     <Compile Include="Assets\Scripts\CameraPlayer.cs" />
     <Compile Include="Assets\Scripts\PlayerContent.cs" />
+    <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\TleManager.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\AutoBlink.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\CameraController.cs" />

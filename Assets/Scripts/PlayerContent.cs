@@ -46,4 +46,8 @@ public class PlayerContent : MonoBehaviour
         vector3.z = speed;
         controller.Move(vector3 * Time.deltaTime);
     }
+    public void SetSpeed(float m)//ham thay doi toc do theo thoi gian
+    {
+        speed = 5.0f + m;
+    }
 }
