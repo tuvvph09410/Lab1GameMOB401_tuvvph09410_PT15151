@@ -12,6 +12,23 @@ public class PlayerContent : MonoBehaviour
     private float animationDuration = 3.0f;
 
     Vector3 vector3;
+    private bool isDead = false;
+
+    //su kien su ly va cham
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.point.z > transform.position.z + controller.radius)// diem va cham
+        {
+            Death();
+        }
+    }
+
+    public void Death()
+    {
+        isDead = true;
+        GetComponent<Score>().onDeath();
+        Debug.Log("Death");
+    }
     void Start()
     {
 

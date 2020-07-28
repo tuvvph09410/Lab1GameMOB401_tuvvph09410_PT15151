@@ -16,6 +16,8 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isDead)
+            return;
         score += Time.deltaTime + dificultyLevel;
         scoreText.text = ((int)score).ToString();
 
@@ -36,5 +38,12 @@ public class Score : MonoBehaviour
                 Debug.Log(dificultyLevel);
             }
         }
+
+    }
+    private bool isDead = false;
+
+    public void onDeath()
+    {
+        isDead = true;
     }
 }
